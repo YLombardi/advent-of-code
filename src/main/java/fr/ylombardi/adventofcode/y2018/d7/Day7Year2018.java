@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Day7Year2017 {
+public class Day7Year2018 {
 
     public String part1(String filePath) {
         // Lire l'input
@@ -15,7 +15,7 @@ public class Day7Year2017 {
         var firstNodes = graph.getNodesWithoutParent();
         System.out.println(firstNodes);
 
-        // Parcourir le graph par ordre alphabetique à partir de ces premier noeuds
+        // Parcourir le graph par ordre alphabetique à partir de ces premiers noeuds
         var visited = graphTraversal(graph, firstNodes);
 
         return String.join("", visited);
