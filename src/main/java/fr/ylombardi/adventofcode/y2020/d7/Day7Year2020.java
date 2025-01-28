@@ -51,16 +51,16 @@ public class Day7Year2020 {
             Map<String, Integer> nextLoopBags = new HashMap<>();
             nextBags.forEach((key, value) -> {
                 var nextBag = allBags.stream().filter(x -> key.equals(x.name)).findFirst().get();
-                nextBag.content.forEach(x -> nextLoopBags.compute(x.name(), (k, v) -> v == null ? x.quantity() * value : v + x.quantity() * value));
+                nextBag.content.forEach(x -> nextLoopBags.compute(x.name(), (name, quantity) -> quantity == null ? x.quantity() * value : quantity + x.quantity() * value));
             });
             // Mettre les nextBags dans TotalBags
             System.out.println(nextBags);
-            nextBags.forEach((key, value) -> totalBags.compute(key, (k,v) -> v == null ? value : v + value));
+            nextBags.forEach((key, value) -> totalBags.compute(key, (k, v) -> v == null ? value : v + value));
             // Remplacer nextBags par nextLoopBags pour l'étape suivante
             nextBags = nextLoopBags;
         }
 
-
+        // -1 car on ne compte pas le shiny gold
         System.out.println(totalBags.values().stream().reduce(-1, Integer::sum));
 
     }
