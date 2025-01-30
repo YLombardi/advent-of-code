@@ -10,8 +10,8 @@ class Day8Year2019Test {
 
     @Test
     void part1() {
-        assertEquals(1, day.exo("src/main/resources/y2019d8-exemple.txt",3, 2));
-        System.out.println(day.exo("src/main/resources/y2019d8.txt", 25, 6));
+        assertEquals(1, day.exo("src/main/resources/input/y2019d8-exemple.txt",3, 2));
+        System.out.println(day.exo("src/main/resources/input/y2019d8.txt", 25, 6));
     }
 
 }

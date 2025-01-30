@@ -7,7 +7,7 @@ class Day7Year2020Test {
 
     @Test
     void part1() {
-        day7Year2018.exo("src/main/resources/y2020d7.txt");
+        day7Year2018.exo("src/main/resources/input/y2020d7.txt");
     }
 
 }

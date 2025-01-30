@@ -12,7 +12,7 @@ class Day8Year2020Test {
 
     @Test
     void part1() throws IOException {
-        assertEquals(5, day.part1("src/main/resources/y2020d8-exemple.txt"));
-        assertEquals(1, day.part1("src/main/resources/y2020d8.txt"));
+        assertEquals(5, day.part1("src/main/resources/input/y2020d8-exemple.txt"));
+        assertEquals(1, day.part1("src/main/resources/input/y2020d8.txt"));
     }
 }

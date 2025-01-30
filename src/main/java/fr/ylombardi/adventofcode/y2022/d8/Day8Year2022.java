@@ -1,5 +1,7 @@
 package fr.ylombardi.adventofcode.y2022.d8;
 
+import fr.ylombardi.adventofcode.utils.InputParsingUtils;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -149,15 +151,7 @@ public class Day8Year2022 {
     }
 
     public Integer[][] input(String fileName) {
-        Integer[][] positions;
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            Stream<String> rows = br.lines();
-            positions = rows.map(l -> Arrays.stream(l.split("")).map(Integer::parseInt).toArray(Integer[]::new))
-                    .toArray(Integer[][]::new);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return positions;
+        return InputParsingUtils.inputToIntegerArray(fileName);
     }
 
 }

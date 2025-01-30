@@ -1,9 +1,7 @@
 package fr.ylombardi.adventofcode.y2024.d4;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Arrays;
+import fr.ylombardi.adventofcode.utils.InputParsingUtils;
+
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
@@ -99,14 +97,6 @@ public class Day4Year2024 {
     }
 
     public String[][] input(String fileName) {
-        String[][] positions;
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            Stream<String> rows = br.lines();
-            positions = rows.map(l -> Arrays.stream(l.split("")).toArray(String[]::new))
-                    .toArray(String[][]::new);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return positions;
+        return InputParsingUtils.inputToStringArray(fileName);
     }
 }

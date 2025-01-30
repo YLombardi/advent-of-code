@@ -10,14 +10,14 @@ class Day5Year2024Test {
 
     @Test
     void part1() {
-        assertEquals(143, day.part1("src/main/resources/y2024d5-exemple.txt"));
-        System.out.println("Result part1: " + day.part1("src/main/resources/y2024d5.txt"));
+        assertEquals(143, day.part1("src/main/resources/input/y2024d5-exemple.txt"));
+        System.out.println("Result part1: " + day.part1("src/main/resources/input/y2024d5.txt"));
     }
 
     @Test
     void part2() {
-        assertEquals(123, day.part2("src/main/resources/y2024d5-exemple.txt"));
-        System.out.println("Result part2: " + day.part2("src/main/resources/y2024d5.txt"));
+        assertEquals(123, day.part2("src/main/resources/input/y2024d5-exemple.txt"));
+        System.out.println("Result part2: " + day.part2("src/main/resources/input/y2024d5.txt"));
     }
 
 }

@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Day8Year2021 {
 
     void part1() {
-        List<Input> inputs = getPart1Input("src/main/resources/y2021d8.txt");
+        List<Input> inputs = getPart1Input("src/main/resources/input/y2021d8.txt");
 
         AtomicInteger total = new AtomicInteger();
         inputs.forEach(i -> {
@@ -49,7 +49,7 @@ public class Day8Year2021 {
 //        Input i = new Input(input, "cdfeb fcadb cdfeb cdbaf");
 //        readInput(i);
 
-        List<Input> inputs = getPart2Input("src/main/resources/y2021d8.txt");
+        List<Input> inputs = getPart2Input("src/main/resources/input/y2021d8.txt");
         Integer total = inputs.stream().map(this::readInput).reduce(0, Integer::sum);
         System.out.println(total);
     }

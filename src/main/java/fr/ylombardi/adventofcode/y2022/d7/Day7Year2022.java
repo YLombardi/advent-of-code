@@ -1,5 +1,7 @@
 package fr.ylombardi.adventofcode.y2022.d7;
 
+import fr.ylombardi.adventofcode.utils.InputParsingException;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -69,7 +71,7 @@ public class Day7Year2022 {
                 // Si $ ls, on skip
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new InputParsingException(fileName, e);
         }
 
         return root;

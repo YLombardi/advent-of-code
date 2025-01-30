@@ -10,13 +10,13 @@ class Day7Year2018Test {
 
     @Test
     void part1() {
-        assertEquals("CABDFE", day7Year2018.part1("src/main/resources/y2018d7-exemple.txt"));
-        System.out.println(day7Year2018.part1("src/main/resources/y2018d7.txt"));
+        assertEquals("CABDFE", day7Year2018.part1("src/main/resources/input/y2018d7-exemple.txt"));
+        System.out.println(day7Year2018.part1("src/main/resources/input/y2018d7.txt"));
     }
 
     @Test
     void part2() {
-        assertEquals(15, day7Year2018.part2("src/main/resources/y2018d7-exemple.txt", 2, 0));
-        System.out.println(day7Year2018.part2("src/main/resources/y2018d7.txt", 5, 60));
+        assertEquals(15, day7Year2018.part2("src/main/resources/input/y2018d7-exemple.txt", 2, 0));
+        System.out.println(day7Year2018.part2("src/main/resources/input/y2018d7.txt", 5, 60));
     }
 }

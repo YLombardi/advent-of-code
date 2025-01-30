@@ -1,10 +1,6 @@
 package fr.ylombardi.adventofcode.y2024.d6;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import fr.ylombardi.adventofcode.utils.InputParsingUtils;
 
 public class Day6Year2024 {
 
@@ -64,15 +60,6 @@ public class Day6Year2024 {
     }
 
     public WorldMap input(String fileName) {
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            List<char[]> map = new ArrayList<>();
-            String line;
-            while ((line = br.readLine()) != null) {
-                map.add(line.toCharArray());
-            }
-            return new WorldMap(map.toArray(new char[0][0]));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        return new WorldMap(InputParsingUtils.inputToCharArray(fileName));
     }
 }

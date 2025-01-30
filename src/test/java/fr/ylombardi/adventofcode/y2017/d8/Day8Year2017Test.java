@@ -9,14 +9,14 @@ class Day8Year2017Test {
 
     @Test
     void part1() {
-        Assertions.assertEquals(1, day.part1("src/main/resources/y2017d8-exemple.txt"));
-        System.out.println(day.part1("src/main/resources/y2017d8.txt"));
+        Assertions.assertEquals(1, day.part1("src/main/resources/input/y2017d8-exemple.txt"));
+        System.out.println(day.part1("src/main/resources/input/y2017d8.txt"));
     }
 
     @Test
     void part2() {
-        Assertions.assertEquals(10, day.part2("src/main/resources/y2017d8-exemple.txt"));
-        System.out.println(day.part2("src/main/resources/y2017d8.txt"));
+        Assertions.assertEquals(10, day.part2("src/main/resources/input/y2017d8-exemple.txt"));
+        System.out.println(day.part2("src/main/resources/input/y2017d8.txt"));
     }
 
 }
