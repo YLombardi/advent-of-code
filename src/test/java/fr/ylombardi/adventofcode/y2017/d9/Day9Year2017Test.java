@@ -13,4 +13,10 @@ class Day9Year2017Test {
         System.out.println(day.part1("src/main/resources/input/y2017d9.txt"));
     }
 
+    @Test
+    void part2() {
+        Assertions.assertEquals(3, day.part1("src/main/resources/input/y2017d9-exemple.txt"));
+        System.out.println(day.part2("src/main/resources/input/y2017d9.txt"));
+    }
+
 }
