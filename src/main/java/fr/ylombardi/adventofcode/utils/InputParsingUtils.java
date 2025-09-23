@@ -103,4 +103,16 @@ public class InputParsingUtils {
         }
     }
 
+    public static List<List<Integer>> inputToListOfListOfIntegers(String fileName) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            return br.lines()
+                    .map(line -> Arrays.stream(line.split(" "))
+                            .map(Integer::parseInt)
+                            .toList())
+                    .toList();
+        } catch (IOException e) {
+            throw new InputParsingException(fileName, e);
+        }
+    }
+
 }
