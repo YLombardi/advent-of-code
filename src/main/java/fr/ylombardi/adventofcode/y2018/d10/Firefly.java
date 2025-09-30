@@ -25,12 +25,4 @@ public class Firefly {
         x += velocityX;
         y += velocityY;
     }
-
-    public int getPrintX() {
-        return x / 1000;
-    }
-
-    public int getPrintY() {
-        return y / 1000;
-    }
 }
